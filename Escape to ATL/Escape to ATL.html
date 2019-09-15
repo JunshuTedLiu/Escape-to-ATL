@@ -100,7 +100,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="Escape to ATL" startnode="1" creator="Twine" creator-version="2.3.3" ifid="B80CA247-64E6-4527-A615-60B22F1FD4A6" zoom="1" format="SugarCube" format-version="2.28.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body.back{
+	<div id="store-area" hidden><tw-storydata name="Escape to ATL" startnode="3" creator="Twine" creator-version="2.3.3" ifid="B80CA247-64E6-4527-A615-60B22F1FD4A6" zoom="1" format="SugarCube" format-version="2.28.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body.back{
   background: url("images/road trip.jpg") fixed;
   background-size: cover;
 
@@ -121,12 +121,12 @@ body.bad{
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">setup.showAlert = function(){
 	alert ("You are about to enter the game");
-}</script><tw-passagedata pid="1" name="Holiday season" tags="back" position="583,49" size="100,100">&lt;&lt;audio &quot;suspense&quot; volume 1 play&gt;&gt;
-&lt;audio src=&#39;audio/1.mp3&#39; autoplay/&gt;
-
-&lt;&lt;script&gt;&gt;
+}</script><tw-tag name="bad" color="gray"></tw-tag><tw-passagedata pid="1" name="Holiday season" tags="back" position="584,49" size="100,100">&lt;&lt;script&gt;&gt;
 setup.showAlert();
 &lt;&lt;/script&gt;&gt;
+
+&lt;&lt;audio &quot;song&quot; volume 1 play&gt;&gt;
+
 
 &lt;h3&gt;November 26, 2026&lt;/h3&gt;
 
@@ -141,7 +141,7 @@ Ted, originally from China, graduated from Georgia Institute of Technology in 20
 This Thanksgiving holiday, Ted and Abby flew from California to Georgia, met with their parents, and planned to drive to Orlando for the holiday travel. Tom and Mike have arrived at Orlando two days earlier.
 
 
-[[Start|Escape to Atlanta]]</tw-passagedata><tw-passagedata pid="2" name="Escape to Atlanta" tags="bad" position="703,169" size="100,100">&lt;h1&gt;Escape to Atlanta&lt;/h1&gt;
+[[Start|Escape to Atlanta]]</tw-passagedata><tw-passagedata pid="2" name="Escape to Atlanta" tags="bad" position="701,201" size="100,100">&lt;h1&gt;Escape to Atlanta&lt;/h1&gt;
 
 &lt;strong&gt;A day before, November 25, 2026&lt;/strong&gt;
 
@@ -157,10 +157,12 @@ TED: So how’s the weather? I guess it’s warm there right?
 TOM: Yep, it’s super comfortable, just a little bit cloudy and windy. Maybe there will be rain tomorrow?
 TED: Oh I think we forgot to bring the umbrella...
 
-[[Settled Down]] </tw-passagedata><tw-passagedata pid="3" name="2" tags="bad" position="1042,157" size="100,100">insert</tw-passagedata><tw-passagedata pid="4" name="StoryInit" tags="" position="410,21" size="100,100">&lt;&lt;cacheaudio &quot;suspense&quot; &quot;audio/1.mp3&quot;&gt;&gt;
+[[Settled Down]] </tw-passagedata><tw-passagedata pid="3" name="Welcome" tags="" position="959,0" size="100,100">&lt;h1&gt;Escape To Atlanta&lt;/h1&gt;
+
+[[Start Game|Holiday season]]</tw-passagedata><tw-passagedata pid="4" name="StoryInit" tags="" position="410,21" size="100,100">&lt;&lt;cacheaudio &quot;song&quot; &quot;audio/1.mp3&quot;&gt;&gt;
 
 &lt;&lt;set $peopleInTheCar to 3&gt;&gt;
-&lt;&lt;set $selfish to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Settled Down" tags="" position="705,372" size="100,100">6:02 p.m.
+&lt;&lt;set $selfish to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Settled Down" tags="" position="704,373" size="100,100">6:02 p.m.
 
 After a long road trip from Atlanta, they settled down at the hotel - Disney’s Contemporary Resort, right next to the Walt Disney World Resort.
 
@@ -170,7 +172,9 @@ Peter is excited to visit Disney Word. This will be his first visit.
 
 They went to bed earlier, because it’s kinda windy outside, and they are pretty tired. Ted’s phone received a notification, but he missed it.
 
-[[Next &gt;|The Next Day]] </tw-passagedata><tw-passagedata pid="6" name="The Next Day" tags="" position="703,575" size="100,100">&lt;h1&gt;November 26, 2026&lt;/h1&gt;
+[[Next &gt;|The Next Day]] </tw-passagedata><tw-passagedata pid="6" name="The Next Day" tags="" position="703,575" size="100,100">&lt;&lt;audio &quot;song&quot; stop&gt;&gt;
+
+&lt;h1&gt;November 26, 2026&lt;/h1&gt;
 
 8:23 a.m.
 
@@ -211,7 +215,7 @@ Ted, Abby, and Peter are still stuck in the traffic. Windy day will not stop peo
 
 As expected, the traffic is very bad. You know, holiday season. Everyone would like to arrive at Disney World as early as possible.
 
-[[Next|Arrived 1]] </tw-passagedata><tw-passagedata pid="10" name="Peter&#39;s Argument" tags="" position="747,931" size="100,100">&quot;It&#39;s just a wind alert. I like winds!&quot;
+[[Next &gt;|Arrived 1]] </tw-passagedata><tw-passagedata pid="10" name="Peter&#39;s Argument" tags="" position="747,931" size="100,100">&quot;It&#39;s just a wind alert. I like winds!&quot;
 
 Peter is still not happy. He expected a lot from this holiday travel, and his most favorite place is, without a doubt, the Disney Land. He thrown away the iPad, and complaining.
 
@@ -229,7 +233,7 @@ Ted, Abby, and Peter are on their way.
 
 Just as expected, there&#39;s a little traffic jam on the way to the Disney World. You know, holiday season. However, it&#39;s not as bad as expected. Maybe because of the windy weather?
 
-[[Next|Arrived 2]] </tw-passagedata><tw-passagedata pid="12" name="TRAFFIC: Very good, but everyone is going back" tags="" position="750,1313" size="100,100">12:56 a.m.
+[[Next &gt;|Arrived 2]] </tw-passagedata><tw-passagedata pid="12" name="TRAFFIC: Very good, but everyone is going back" tags="" position="750,1313" size="100,100">12:56 a.m.
 
 They finally on their way to Disney World, and the traffic is unexpectedly great.
 
