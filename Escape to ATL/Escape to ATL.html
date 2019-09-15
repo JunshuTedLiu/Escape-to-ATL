@@ -103,17 +103,32 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 	<div id="store-area" hidden><tw-storydata name="Escape to ATL" startnode="3" creator="Twine" creator-version="2.3.3" ifid="B80CA247-64E6-4527-A615-60B22F1FD4A6" zoom="1" format="SugarCube" format-version="2.28.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body.back{
   background: url("images/road trip.jpg") fixed;
   background-size: cover;
-
 }
 
 body.bad{
   background: url("images/disney.jpg") fixed;
-  
   background-size: cover;
-  
-  
 }
 
+body.graveyard{
+  background: url("images/graveyard.jpeg") fixed;
+  background-size: cover;
+}
+
+body.heroman{
+  background: url("images/hero_man.jpg") fixed;
+  background-size: cover;
+}
+
+body.injured{
+  background: url("images/injured.png") fixed;
+  background-size: cover;
+}
+
+body.argument{
+  background: url("images/argument.png") fixed;
+  background-size: cover;
+}
 
 * {
   text-shadow: 2px 2px #696969;
@@ -217,7 +232,7 @@ Ted, Abby, and Peter are still stuck in the traffic. Windy day will not stop peo
 
 As expected, the traffic is very bad. You know, holiday season. Everyone would like to arrive at Disney World as early as possible.
 
-[[Next &gt;|Arrived 1]] </tw-passagedata><tw-passagedata pid="10" name="Peter&#39;s Argument" tags="" position="747,931" size="100,100">&quot;It&#39;s just a wind alert. I like winds!&quot;
+[[Next &gt;|Arrived 1]] </tw-passagedata><tw-passagedata pid="10" name="Peter&#39;s Argument" tags="argument" position="747,931" size="100,100">&quot;It&#39;s just a wind alert. I like winds!&quot;
 
 Peter is still not happy. He expected a lot from this holiday travel, and his most favorite place is, without a doubt, the Disney Land. He thrown away the iPad, and complaining.
 
@@ -294,7 +309,7 @@ Peter loves all of those amusement equipments. They are having a great time ther
 
 Until a message pops up on everyone&#39;s phones.
 
-[[HURRICANE WARNING]]</tw-passagedata><tw-passagedata pid="18" name="THE END 2" tags="" position="492,5149" size="100,100">&lt;h1&gt;
+[[HURRICANE WARNING]]</tw-passagedata><tw-passagedata pid="18" name="THE END 2" tags="heroman" position="492,5149" size="100,100">&lt;h1&gt;
 In memories of
 &lt;br&gt;
 Ted Liu
@@ -309,7 +324,7 @@ His family and the whole community will remember him. Ted&#39;s story was report
 
 Funeral, December 3, 2026
 
-A statue is being placed at the community complex.</tw-passagedata><tw-passagedata pid="19" name="THE END 3-1" tags="" position="750,5147" size="100,100">&lt;h1&gt;What a tragedy.&lt;/h1&gt;
+A statue is being placed at the community complex.</tw-passagedata><tw-passagedata pid="19" name="THE END 3-1" tags="graveyard" position="750,5147" size="100,100">&lt;h1&gt;What a tragedy.&lt;/h1&gt;
 
 Everyone in Ted&#39;s family are dead or missing.
 
@@ -594,7 +609,7 @@ Selfish level: $selfish
 
 After a long, 1.5-hour trip, Ted sent Tom and Nick to their hotel. He wonder that if Abby found their parents.
 
-[[Next &gt;|Lost contact with A and P]] </tw-passagedata><tw-passagedata pid="38" name="Walk." tags="" position="775,4400" size="100,100">In the car: $peopleInTheCar
+[[Next &gt;|Lost contact with A and P]] </tw-passagedata><tw-passagedata pid="38" name="Walk." tags="injured" position="775,4400" size="100,100">In the car: $peopleInTheCar
 Selfish level: $selfish
 
 The extreme wind speed is blowing up everything on the street.
@@ -625,7 +640,7 @@ Selfish level: $selfish
 
 Ted&#39;s family is not yet at the hotel. Looks like Abby and Peter haven&#39;t found Elisa and Nick.
 
-[[Next &gt;|Lost contact with A and P]] </tw-passagedata><tw-passagedata pid="43" name="Hospital-Ted" tags="" position="515,4956" size="100,100">In the car: $peopleInTheCar
+[[Next &gt;|Lost contact with A and P]] </tw-passagedata><tw-passagedata pid="43" name="Hospital-Ted" tags="" position="530,4957" size="100,100">In the car: $peopleInTheCar
 Selfish level: $selfish
 
 Orlando&#39;s best hospital, AdventHealth Orlando, help Ted contacted his family. They are now safe in the hotel.
@@ -641,7 +656,7 @@ Orlando&#39;s best hospital, AdventHealth Orlando, announced Abby, Peter&#39;s d
 
 Elisa and Nick are still missing.
 
-[[Next &gt;|RandomEnd]]</tw-passagedata><tw-passagedata pid="45" name="Abby and Peter walk" tags="" position="1121,3923" size="100,100">In the car: $peopleInTheCar
+[[Next &gt;|RandomEnd]]</tw-passagedata><tw-passagedata pid="45" name="Abby and Peter walk" tags="injured" position="1121,3923" size="100,100">In the car: $peopleInTheCar
 Selfish level: $selfish
 
 The extreme wind speed is blowing up everything on the street.
@@ -674,7 +689,7 @@ Furtunately, Ted survived from the injury. Orlando&#39;s best hospital, AdventHe
 
 Ted tried his best to control the car, but it hits on a big truck and caught on fire immediately.
 
-[[Next &gt;|RandomEnd]]</tw-passagedata><tw-passagedata pid="50" name="THE END 3-2" tags="" position="910.5,5145" size="100,100">&lt;h1&gt;What a tragedy.&lt;/h1&gt;
+[[Next &gt;|RandomEnd]]</tw-passagedata><tw-passagedata pid="50" name="THE END 3-2" tags="graveyard" position="910.5,5145" size="100,100">&lt;h1&gt;What a tragedy.&lt;/h1&gt;
 
 Everyone in Ted&#39;s family are dead or missing, except Abby. She got badly burned on her skin and was sent to the hospital.
 
@@ -705,7 +720,7 @@ Ted Liu
 &lt;br&gt;
 1996 - 2026&lt;/h1&gt;
 
-We feel bad for Ted&#39;s death. Luckily, everyone in Ted&#39;s family survived, while we don&#39;t know if the kid will be safe. We also hope someone can help him at the restaurant. Ted seems very worried about their family and would like to see them at the hotel as soon as possible, and he died on the way when he is on his way back to the hotel. We want to say that since the child is less capable of helping itself, it&#39;s better that Ted can help the kid to find the parents. However, since Ted is dead, let&#39;s pray for him, and we feel bad for his family&#39;s loss.</tw-passagedata><tw-passagedata pid="56" name="Ted went back to the hotel" tags="" position="632,4715" size="100,100">Ted went back to the hotel. Abby drove the family to the hotel and now everyone is safe.
+We feel bad for Ted&#39;s death. Luckily, everyone in Ted&#39;s family survived, while we don&#39;t know if the kid will be safe. We also hope someone can help him at the restaurant. Ted seems very worried about their family and would like to see them at the hotel as soon as possible, and he died on the way when he is on his way back to the hotel. We want to say that since the child is less capable of helping itself, it&#39;s better that Ted can help the kid to find the parents. However, since Ted is dead, let&#39;s pray for him, and we feel bad for his family&#39;s loss.</tw-passagedata><tw-passagedata pid="56" name="Ted went back to the hotel" tags="" position="625,4688" size="100,100">Ted went back to the hotel. Abby drove the family to the hotel and now everyone is safe.
 
 [[THE END 1-1]] </tw-passagedata><tw-passagedata pid="57" name="THE END 1-1" tags="" position="378,5359" size="100,100">&lt;h3&gt;Not bad.&lt;/h3&gt;
 
