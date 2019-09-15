@@ -136,7 +136,13 @@ body.argument{
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">setup.showAlert = function(){
 	alert ("You are about to enter the game");
-}</script><tw-tag name="bad" color="gray"></tw-tag><tw-passagedata pid="1" name="Holiday season" tags="back" position="584,49" size="100,100">&lt;&lt;script&gt;&gt;
+}
+
+setup.weatherAlert = function Huricanealert (){
+	alert ("Weather Alert: Read th BULLETIN" + "\n\n" + "*** HURRICANE WARNING ***");
+}
+				
+</script><tw-tag name="bad" color="gray"></tw-tag><tw-passagedata pid="1" name="Holiday season" tags="back" position="584,49" size="100,100">&lt;&lt;script&gt;&gt;
 setup.showAlert();
 &lt;&lt;/script&gt;&gt;
 
@@ -355,7 +361,11 @@ They have no choice but leave the Disney World. Peter understand the situation, 
 However, they have no idea where Elisa and Nick are.
 
 [[Make a phone call with Elisa and Nick|Peter&#39;s grandparent is lost]] 
-[[Go back to the hotel first][$selfish to $selfish + 1]]</tw-passagedata><tw-passagedata pid="25" name="HURRICANE WARNING" tags="" position="678,1901" size="100,100">&lt;&lt;audio &quot;alert&quot; volume 1 play&gt;&gt;
+[[Go back to the hotel first][$selfish to $selfish + 1]]</tw-passagedata><tw-passagedata pid="25" name="HURRICANE WARNING" tags="" position="678,1901" size="100,100">&lt;&lt;script&gt;&gt;
+setup.weatherAlert(&quot;Huricanealert&quot;);
+&lt;&lt;/script&gt;&gt;
+
+&lt;&lt;audio &quot;alert&quot; volume 1 play&gt;&gt;
 WTUS82 KMHX 111443
 HLSMHX
 NCZ029-044&gt;047-079&gt;081-090&gt;095-098-103-104-112245-
@@ -366,8 +376,7 @@ National Weather Service Newport/Morehead City NC  AL092026
 
 This product covers Florida, Eastern Georgia, and Southern South Carolina
 
-**DANGEROUS HURRICANE IRENE FORECAST TO APPROACH EASTERN NORTH CAROLINA 
-COAST ON THURSDAY** 
+**DANGEROUS HURRICANE IRENE FORECAST TO APPROACH FLORIDA ON WEDNESDAY** 
 
 NEW INFORMATION
 ---------------
