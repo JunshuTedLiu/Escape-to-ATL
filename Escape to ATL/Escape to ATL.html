@@ -160,6 +160,8 @@ TED: Oh I think we forgot to bring the umbrella...
 [[Settled Down]] </tw-passagedata><tw-passagedata pid="3" name="Welcome" tags="" position="959,0" size="100,100">&lt;h1&gt;Escape To Atlanta&lt;/h1&gt;
 
 [[Start Game|Holiday season]]</tw-passagedata><tw-passagedata pid="4" name="StoryInit" tags="" position="410,21" size="100,100">&lt;&lt;cacheaudio &quot;song&quot; &quot;audio/1.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;suspense&quot; &quot;audio/suspense.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;alert&quot; &quot;audio/alert.mp3&quot;&gt;&gt;
 
 &lt;&lt;set $peopleInTheCar to 3&gt;&gt;
 &lt;&lt;set $selfish to 0&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Settled Down" tags="" position="704,373" size="100,100">6:02 p.m.
@@ -311,7 +313,7 @@ A statue is being placed at the community complex.</tw-passagedata><tw-passageda
 
 Everyone in Ted&#39;s family are dead or missing.
 
-We remember them, while there are a lot of thing we should reflect from this. Ted did not make right choices, and he missed a lot of opportunities to save both his family and himself. What a shame.</tw-passagedata><tw-passagedata pid="20" name="RandomEnd" tags="" position="819,4989" size="100,100">&lt;&lt;goto &#96;either(&quot;THE END 3-1&quot;, &quot;THE END 3-2&quot;)&#96;&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="A stranded kid" tags="" position="683,3580" size="100,100">In the car: $peopleInTheCar
+We remember them, while there are a lot of thing we should reflect from this. Ted did not make right choices, and he missed a lot of opportunities to save both his family and himself.</tw-passagedata><tw-passagedata pid="20" name="RandomEnd" tags="" position="819,4989" size="100,100">&lt;&lt;goto &#96;either(&quot;THE END 3-1&quot;, &quot;THE END 3-2&quot;)&#96;&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="A stranded kid" tags="" position="683,3580" size="100,100">In the car: $peopleInTheCar
 Selfish level: $selfish
 
 &quot;Uncle, please help me!&quot;
@@ -338,7 +340,8 @@ They have no choice but leave the Disney World. Peter understand the situation, 
 However, they have no idea where Elisa and Nick are.
 
 [[Make a phone call with Elisa and Nick|Peter&#39;s grandparent is lost]] 
-[[Go back to the hotel first][$selfish to $selfish + 1]]</tw-passagedata><tw-passagedata pid="25" name="HURRICANE WARNING" tags="" position="677,1901" size="100,100">WTUS82 KMHX 111443
+[[Go back to the hotel first][$selfish to $selfish + 1]]</tw-passagedata><tw-passagedata pid="25" name="HURRICANE WARNING" tags="" position="678,1901" size="100,100">&lt;&lt;audio &quot;alert&quot; volume 1 play&gt;&gt;
+WTUS82 KMHX 111443
 HLSMHX
 NCZ029-044&gt;047-079&gt;081-090&gt;095-098-103-104-112245-
 
@@ -350,8 +353,6 @@ This product covers Florida, Eastern Georgia, and Southern South Carolina
 
 **DANGEROUS HURRICANE IRENE FORECAST TO APPROACH EASTERN NORTH CAROLINA 
 COAST ON THURSDAY** 
-
-[[Drive back|On the way back to the hotel]]
 
 NEW INFORMATION
 ---------------
@@ -492,7 +493,8 @@ The next local statement will be issued by the National Weather
 Service around NOON, or sooner if 
 conditions warrant.
 
-$$</tw-passagedata><tw-passagedata pid="26" name="Peter&#39;s grandparent is lost" tags="" position="660,2273" size="100,100">In the car: $peopleInTheCar
+[[Drive back|On the way back to the hotel]]</tw-passagedata><tw-passagedata pid="26" name="Peter&#39;s grandparent is lost" tags="" position="660,2273" size="100,100">&lt;&lt;audio &quot;suspense&quot; volume 1 play&gt;&gt;
+In the car: $peopleInTheCar
 Selfish level: $selfish
 
 Ted made a phone call to Elisa and Nick.
@@ -676,7 +678,7 @@ Ted tried his best to control the car, but it hits on a big truck and caught on 
 
 Everyone in Ted&#39;s family are dead or missing, except Abby. She got badly burned on her skin and was sent to the hospital.
 
-We remember them, while there are a lot of thing we should reflect from this. Ted did not make right choices, and he missed a lot of opportunities to save both his family and himself. What a shame.</tw-passagedata><tw-passagedata pid="51" name="Hospital-Ted-2" tags="" position="753.5,4716" size="100,100">In the car: $peopleInTheCar
+We remember them, while there are a lot of thing we should reflect from this. Ted did not make right choices, and he missed a lot of opportunities to save both his family and himself.</tw-passagedata><tw-passagedata pid="51" name="Hospital-Ted-2" tags="" position="753.5,4716" size="100,100">In the car: $peopleInTheCar
 Selfish level: $selfish
 
 Orlando&#39;s best hospital, AdventHealth Orlando, help Ted contacted his family. They are now safe in the hotel.
